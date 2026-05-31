@@ -167,7 +167,6 @@ Send2Trash
 simplejson
 six
 sklearn-compat
-sktime
 smmap
 soupsieve
 SQLAlchemy
