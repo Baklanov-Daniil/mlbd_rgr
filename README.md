@@ -74,24 +74,5 @@
 
 ## Структура проекта
 
-mlbd_rgr/
-├── developer_info.py # Главная страница (о разработчике)
-├── pages/
-│ ├── 1_about_data.py # Описание датасета и EDA
-│ ├── 2_visualization.py # Визуализация зависимостей
-│ └── 3_inference.py # Страница прогнозирования
-├── models/ # Сериализованные модели
-│ ├── ML1_LogReg.pkl
-│ ├── ML2_GradientBoosting.pkl
-│ ├── ML3_CatBoost.cbm
-│ ├── ML4_Bagging.pkl
-│ ├── ML5_Stacking.pkl
-│ └── ML6_NeuralNet.keras
-├── data/ # Датасеты
-│ ├── winequality-red.csv
-│ ├── winequality-white.csv
-│ └── final_data_wine.csv
-├── scaler.pkl # Стандартизатор признаков
-├── my_photo.png # Фото разработчика
-├── requirements.txt # Зависимости
-└── train_models.ipynb # Jupyter Notebook для обучения моделей
+<img width="475" height="462" alt="image" src="https://github.com/user-attachments/assets/49105819-eebe-4f0e-84d1-9dd4a7d34640" />
+
