@@ -21,8 +21,8 @@ st.markdown("""
 """)
 
 try:
-    df_red = pd.read_csv('../data/winequality-red.csv', sep=";")
-    df_white = pd.read_csv('../data/winequality-white.csv', sep=";")
+    df_red = pd.read_csv('data/winequality-red.csv', sep=";")
+    df_white = pd.read_csv('data/winequality-white.csv', sep=";")
     df_red["type"] = 1
     df_white["type"] = 0
     df = pd.concat([df_red, df_white], ignore_index=True)
@@ -98,7 +98,7 @@ missing = df.isnull().sum()
 if missing.sum() == 0:
     st.success("Пропущенные значения отсутствуют")
 else:
-    st.warning(f"⚠️ Найдено пропусков: {missing.sum()}")
+    st.warning(f"Найдено пропусков: {missing.sum()}")
     st.dataframe(missing[missing > 0])
 
 st.subheader("5.2. Проверка на дубликаты")
@@ -208,7 +208,7 @@ st.pyplot(fig)
 
 st.subheader("5.7. Распределение числовых признаков после обработки выбросов")
 
-data_final = pd.read_csv('../data/final_data_wine.csv', index_col=0)
+data_final = pd.read_csv('data/final_data_wine.csv', index_col=0)
 
 numeric_cols = data_final.select_dtypes(include=[np.number]).columns.tolist()
 if 'type' in numeric_cols:

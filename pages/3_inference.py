@@ -181,12 +181,12 @@ with tabs[1]:
                     red_count = np.sum(np.array(final_predictions) == 1)
                     white_count = np.sum(np.array(final_predictions) == 0)
                     
-                    st.success(f"Прогноз выполнен для {len(df_res)} записей (ансамбль из {len(models)} моделей)")
+                    st.success(f"Прогноз выполнен для {len(df_res)} записей")
                     st.write(f"**Красных вин:** {red_count}")
                     st.write(f"**Белых вин:** {white_count}")
                     st.dataframe(df_res, use_container_width=True)
                     
         except Exception as e:
-            st.error(f"❌ Ошибка обработки файла: {e}")
+            st.error(f"Ошибка обработки файла: {e}")
             import traceback
             st.code(traceback.format_exc())
