@@ -147,7 +147,6 @@ python-dateutil
 python-json-logger
 python-multipart
 pytz
-pywinpty
 PyYAML
 pyzmq
 referencing
